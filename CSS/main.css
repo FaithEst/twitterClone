@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.white{
+    color: #ffff;
+}
+.blue{
+    color: #1D9BF0;
+}
+/* section one */
+.secOne{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+/* div with image background */
+.withImgBg{
+    width: 55%;
+    height: 100%;
+    background-image: url(/images/bgiMAGE.png);
+    background-size: contain;
+}
+/* div with twitter icon */
+.withIcon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* twitter icon */
+.twitterIcon{
+    color: white;
+    width: 400px;
+    height: 400px;
+}
+/* div on the right side */
+.rightSide{
+    width: 45%;
+    height: 100%;
+}
+/* div with margin auto containing every other thing */
+.main{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    position: relative;
+}
+/* twitter icon */
+.twitterIconBlue{
+    width: 50px;
+    height: 50px;
+}
+/* div with heading */
+.heading{
+    margin: 40px 0;
+}
+/* heading */
+.happeningNow{
+    font-size: 70px;
+    font-weight: bolder;
+}
+/* div with sub-heading */
+.subHeading{
+    margin-bottom: 40px;
+}
+/* sub-heading */
+.joinTwitter{
+    font-size: 30px;
+    font-weight: 550;
+}
+/* div with other divs with buttons */
+.mainMain{
+    width: 100%;
+}
+/* div outer with sign in with apple div */
+.outer{
+    width: 50%;
+    border: solid 1px #999;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.outer:hover{
+    background-color: rgb(187, 185, 185, 0.4);
+    cursor: pointer;
+}
+/* with apple icon and span */
+.iconAndSpan{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* span */
+.text{
+    font-weight: bold;
+    margin-left: 5px;
+}
+/* div with "or" and lines*/
+.outer2{
+    width: 50%;
+    display: flex;
+}
+/* div with or */
+.withOr{
+    width: 10%;
+    text-align: center;
+}
+/* div with divLine */
+.withLine{
+    width: 45%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+/* line */
+.line{
+    width: 100%;
+    border-bottom: rgb(196, 192, 192, 0.5) groove 1px;
+}
+.outerB{
+    width: 50%;
+    border: solid 1px #999;
+    border-radius: 20px;
+    padding: 10px 0;
+    background-color: #1D9BF0;
+    margin-bottom: 10px;
+}
+.outerB:hover{
+    background-color: rgba(8, 109, 176);
+    cursor: pointer;
+}
+/* Sign up with phone or email */
+.iconAndSpanB{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.outerC{
+    width: 100%;
+    border: solid 1px #999;
+    border-radius: 20px;
+    padding: 10px 0;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.outerC:hover{
+    background-color: rgba(8, 109, 176, 0.2);
+    cursor: pointer;
+}
+.mainOuter{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+}
+.text2{
+   font-size: 17px;
+}
+/* pop up section */
+.secTwo{
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(0, 0, 0, 0.4);
+   display: flex;
+   position: absolute;
+   top: 0;
+   align-items: center;
+   display: none;
+}
+#closeIcon, #close, #closeIcon3, .forgotPassword{
+    cursor: pointer;
+}
+.popUp{
+    width: 43%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+}
+.withCloseAndTwitterIcon{
+    display: flex;
+    align-items: center;
+    width: 52%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.mainInPopup{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.textCreate{
+    font-size: 25px;
+    font-weight: bold;
+}
+.nameBtn{
+    width: 100%;
+    border: groove 1px rgb(0, 0, 0, 0.3);
+    padding: 20px 0;
+    margin: 30px 0;
+}
+.nameBtn label{
+    color: #999;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.input{
+    border-style: none;
+    width: 80%;
+}
+.useEmail{
+    font-size: 17px;
+    cursor: pointer;
+}
+.usePhone{
+    font-size: 17px;
+    cursor: pointer;
+    display: none;
+}
+.email{
+    display: none;
+}
+/* div with btn */
+.greyBtn{
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+.btnGrey{
+    width: 100%;
+    border-style: none;
+    background-color: #87898C;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 25px;
+}
+.forgotPassword{
+    width: 50%;
+}
+.forgotbtn{
+    width: 100%;
+    text-align: center;
+    border-style: none;
+    border-radius: 25px;
+    padding: 10px 0;
+    background-color: #0F1419;
+    color: white;
+    font-weight: bold;
+}
+
+.main2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}

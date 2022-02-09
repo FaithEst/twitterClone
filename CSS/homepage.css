@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.white{
+    color: #ffff;
+}
+.blue{
+    color: #1D9BF0;
+}
+.cursor{
+    cursor: pointer;
+}
+.bold{
+    font-weight: bold;
+}
+/* section one */
+.secOne{
+    width: 100%;
+    height: 100vh;
+}
+/* div with margin auto containing the rest */
+.main{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.aside{
+    width: 25%;
+    margin-top: 10px;
+}
+.main2{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* anchor tag containing the div */
+.withIcon{
+    text-decoration: none;  
+    color: black;
+    font-size: 20px;
+    font-weight: 530;
+    margin: 10px 0;
+    border: white;
+}
+.text{
+    font-weight: bold;
+}
+.withIcon:hover{
+    cursor: pointer;
+}
+/* div with icon and text */
+.iconAndText{ 
+    width: fit-content;
+    padding: 10px 20px; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+.iconAndText:hover{
+    background-color: #EFF3F4;
+}
+.icon{
+    margin-right: 25px;
+}
+/* button div*/
+.tweetBtn{
+    width: 95%;
+    margin: auto;   
+}
+/* button */
+.blueBtn{
+    width: 100%;
+    border-style: none;
+    padding: 12px 0;
+    color: white;
+    background-color: #1D9BF0;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* div at the center */
+.center{
+    width: 50%;
+    height: 100%;
+    border-left: groove 1px rgb(0, 0, 0, 0.1);
+    border-right: groove 1px rgb(0, 0, 0, 0.1);
+}
+.home{
+    text-decoration: none;
+    color: #0F1419;
+}
+.mainCenter{
+    width: 100%;
+    border-bottom: groove 2px rgb(0, 0, 0, 0.1);
+}
+.mainCenter2{
+    margin-top: 15px;
+}
+.home{
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/* heading inside div home */
+.heading1{
+    font-size: 20px;
+    font-weight: bold;
+}
+/* div with profile and text */
+.profile{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding: 40px 0;
+}
+.roundImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/images/lady.png);
+    background-size: cover;
+    margin-right: 10px;
+}
+.whatsHappening{
+    border-style: none;
+    font-size: 18px;
+}
+/* div with icons and tweet button */
+.withManyIcons{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.icons4{
+    display: flex;
+    align-items: center;
+}
+.btn1{
+    width: 100px;
+}
+.marginRight{
+    margin-right: 10px;
+}
+/* div containing tweet per profile */
+.tweet{
+    width: 95%;
+    margin: auto;
+    display: flex; 
+}
+.tweetContentLeft{
+    width: 13%;
+}
+/* profile inside tweet */
+.tweetRoundImage{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/images/man.jpg);
+    background-size: cover;
+}
+/* main div containing the rest */
+.tweetContentRight{
+    width: 85%;
+}
+/* display flex btwn div with names and icon */
+.row1ContentRight{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+.boldName{
+    font-weight: bold;
+    line-height: normal;
+}
+.boldName:hover{
+    border-bottom: solid 2px black;
+}
+/* row 2 with the text/paragraph */
+.row2ContentRight{
+    width: 96%;
+}
+/* row 3 */
+.row3{
+    margin: 30px 0 15px 0;
+}
+/* span text */
+.row3Text{
+    border-bottom: #1D9BF0 1px solid;
+}
+.contentInRow4{
+    width: 100%;
+    height: 300px;
+    border: groove 1px rgb(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+/* image in row 4 */
+.tweetImageRow4{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-image: url(/images/schafer-dog-4357790_960_720.jpg);
+    background-size: cover;
+}
+/* row 5 */
+.row5{
+    margin: 10px 0;
+}
+/* div with icons */
+.row5Icons{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+/* display flex btwn icon and number */
+.iconsInRow5{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.iconMargin{
+    margin-right: 5px;
+}
+/* aside */
+.asideRight{
+    width: 30%;
+    margin-top: 8px;
+}
+/* search button */
+.search{
+    width: 90%;
+    margin: auto;
+    background-color: #EFF3F4;
+    border-radius: 18px;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    margin: 0 15px 0 20px;
+}
+.searchText{
+    color: rgb(0, 0, 0, 0.6);
+}
+/* trends now */
+.trends{
+    width: 90%;
+    margin: auto;
+    background-color: #EFF3F4;
+    border-radius: 18px;
+    margin-top: 18px;
+    padding-bottom: 10px;
+}
+.rowTrends{
+    width: 90%;
+    margin: auto;
+}
+.row1Trends{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.row1Trends span{
+    font-size: 19px;
+}
+.trendingAndIcon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.moreIconRound{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moreIconRound:hover{
+    color: #1D9BF0;
+    background-color: rgb(29, 155, 240, 0.3);
+}
+/* who to follow */
+.follow{
+    width: 90%;
+    margin: auto;
+    background-color: #EFF3F4;
+    border-radius: 18px;
+    margin-top: 18px;
+    padding-bottom: 10px;
+}
+.whoTo{
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.containAll{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+/* balck button */
+.blackBtn{
+    height: 30px;
+    padding: 0 20px;
+    color: white;
+    background-color: #0F1419;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.space{
+    margin-right: 8px;
+}
+.nameSize{
+    font-size: 18px;
+}
+
+/* profile.html */
+/* row 1 username */
+.arrowAndUsername{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+}
+.roundArrow{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.roundArrow:hover{
+    background-color: rgb(0, 0, 0, 0.2);
+}
+.mukami{
+    font-size: 19px;
+}
+.numberOfTweets{
+    color: rgb(0, 0, 0, 0.5);
+}
+/* row 2 gray background */
+.greyBg{
+    width: 100%;
+    height: 200px;
+    background-color: #CFD9DE;
+    position: relative;
+}
+.outerCircle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 120px;
+    left: 30px;
+}
+.innerCircle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(/images/lady.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opacity{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: none;
+}
+.whiteBg{
+    width: 100%;
+    height: 200px;
+}
+.userNameWhiteBg{
+    width: 95%;
+    margin: auto;
+    padding-top: 100px;
+}
+
