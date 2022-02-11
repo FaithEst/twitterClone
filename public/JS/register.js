@@ -5,6 +5,9 @@ document.getElementById("submit").onclick = function(e){
     let phone = document.getElementById("phone").value;
     let myemail = document.getElementById("email").value;
     let password = document.getElementById("password").value;
+
+
+    
     firebase.auth().createUserWithEmailAndPassword(myemail, password).then((userCredentials) => {
         console.log("user created successfully");
         firebase.firestore().collection("users").doc().set({
@@ -95,25 +98,15 @@ document.getElementById("usePhone").onclick = function(){
 document.getElementById("google").onclick = function(){
     let provider = new firebase.auth.GoogleAuthProvider();
     // --------using pop up
-    firebase.auth()
-    .signInWithPopup(provider)
-    .then((result) => {
-        /** @type {firebase.auth.OAuthCredential} */
-        var credential = result.credential;
+    firebase.auth().signInWithPopup(provider)
+    .then(() => {
 
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = credential.accessToken;
-        // The signed-in user info.
-        var user = result.user;
-        
+        provider.setCustomParameters({
+            'login_hint': 'user@example.com'
+          });
+        window.location.assign('/profile.html');   
+
     }).catch((error) => {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // The email of the user's account used.
-        var email = error.email;
-        // The firebase.auth.AuthCredential type that was used.
-        var credential = error.credential;
-        // ...
+        console.log(error);
     });
 }
