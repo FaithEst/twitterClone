@@ -1,0 +1,61 @@
+@media only screen and (max-width: 600px){
+    .secOne{
+        height: fit-content;
+    }
+    /* div with image background */
+    .withImgBg{
+        display: none;
+    }
+    /* div on the right side */
+    .rightSide{
+        width: 90%;
+        margin: auto;
+    }
+    .iconAndSpan{
+        height: fit-content;
+    }
+    .mainOuter{
+        position: relative;
+    }
+    /* div outer with sign in with apple/google div */
+    .outer, .outer2, .outerB, .mainOuter{
+        width: 100%;
+    }
+    .happeningNow{
+        font-size: 45px;
+    }
+    /* section 2 -------- */
+    .popUp{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+}
+@media only screen and (max-width: 1014px) and (min-width:601px){
+    /* div with image background */
+    .withImgBg{
+        display: none;
+    }
+    /* div on the right side */
+    .rightSide{
+        width: 80%;
+        margin: auto;
+    }
+    /* div with margin auto containing every other thing */
+    .main{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .mainMain{
+        padding: 10px 0;
+    }
+    /* div outer with sign in with apple/google div */
+    .outer, .outer2, .outerB, .mainOuter{
+        width: 70%;
+    }
+    /* section 2 -------- */
+    .popUp{
+        width: 100%;
+        height: 100%;
+    }
+}

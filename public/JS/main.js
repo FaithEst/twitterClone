@@ -16,5 +16,5 @@ document.getElementById("tweetBtn1").onclick = function(){
          
          console.log("success");
       });
-   })
+   });
 }

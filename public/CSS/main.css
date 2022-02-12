@@ -103,6 +103,9 @@
     font-weight: bold;
     margin-left: 5px;
 }
+.signUpText{
+    font-weight: bold;
+}
 /* div with "or" and lines*/
 .outer2{
     width: 50%;

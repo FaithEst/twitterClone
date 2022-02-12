@@ -99,12 +99,18 @@ document.getElementById("google").onclick = function(){
     let provider = new firebase.auth.GoogleAuthProvider();
     // --------using pop up
     firebase.auth().signInWithPopup(provider)
-    .then(() => {
+    .then((result) => {
 
-        provider.setCustomParameters({
-            'login_hint': 'user@example.com'
-          });
-        window.location.assign('/profile.html');   
+        let user = result.user;
+        console.log(user);
+        setTimeout(function(){document.location.href = "profile.html;"},500);
+        // window.location.href = "profile.html", true; 
+        // store data to firestore
+        firebase.firestore().collection("googleUser").doc().set({
+            googleName: user.displayName,
+            googleEmail: user.email,
+            userid:user.uid
+        });
 
     }).catch((error) => {
         console.log(error);
