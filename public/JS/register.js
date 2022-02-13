@@ -103,8 +103,8 @@ document.getElementById("google").onclick = function(){
 
         let user = result.user;
         console.log(user);
-        setTimeout(function(){document.location.href = "profile.html;"},500);
-        // window.location.href = "profile.html", true; 
+        // setTimeout(function(){document.location.href = "profile.html;"},500);
+        window.location.href = "profile.html", true; 
         // store data to firestore
         firebase.firestore().collection("googleUser").doc().set({
             googleName: user.displayName,

@@ -1,4 +1,4 @@
-firebase.auth().onAuthStateChanged((user) => {
+firebase.auth().onAuthStateChanged(user => {
     if(user){
         console.log("logged in");
         let userId = user.uid;

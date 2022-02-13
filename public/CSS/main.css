@@ -80,7 +80,7 @@
 }
 /* div outer with sign in with apple div */
 .outer{
-    width: 50%;
+    width: 60%;
     border: solid 1px #999;
     border-radius: 20px;
     padding: 10px 0;
@@ -108,7 +108,7 @@
 }
 /* div with "or" and lines*/
 .outer2{
-    width: 50%;
+    width: 60%;
     display: flex;
 }
 /* div with or */
@@ -129,7 +129,7 @@
     border-bottom: rgb(196, 192, 192, 0.5) groove 1px;
 }
 .outerB{
-    width: 50%;
+    width: 60%;
     border: solid 1px #999;
     border-radius: 20px;
     padding: 10px 0;
@@ -163,8 +163,7 @@
 }
 .mainOuter{
     width: 50%;
-    position: absolute;
-    bottom: 0;
+    background-color: rgb(248, 200, 136);
     margin-bottom: 25px;
 }
 .text2{
